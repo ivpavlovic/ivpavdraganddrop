@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Project Board</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <template id="tooltip">
+      <h2>Više informacija</h2>
+      <p></p>
+    </template>
+    <header id="main-header">
+      <h1>Projekt planer</h1>
+    </header>
+    <section id="active-projects">
+      <header>
+        <h2>Aktivni projekti</h2>
+      </header>
+      <ul>
+        <li
+          id="p1"
+          data-extra-info="Dobio sam doživotni pristup, ali bilo bi lijepo uskoro to završiti!"
+          class="card"
+          draggable="true"
+        >
+          <h2>Završiti tečaj</h2>
+          <p>Završiti tečaj u roku od dva tjedna.</p>
+          <button class="alt">Više...</button>
+          <button>Završi</button>
+        </li>
+        <li
+          id="p2"
+          data-extra-info="Nije baš poslovna tema, ali je ipak važna."
+          class="card"
+          draggable="true"
+        >
+          <h2>Kupi Namirnice</h2>
+          <p>Nemoj zaboraviti pokupiti namirnice danas.</p>
+          <button class="alt">Više...</button>
+          <button>Završi</button>
+        </li>
+      </ul>
+    </section>
+    <section id="finished-projects">
+      <header>
+        <h2>Završeni Projekti</h2>
+      </header>
+      <ul>
+        <li
+          id="p3"
+          data-extra-info="
+          Izuzetno važna konferencija! Iako izmišljena, ipak je važna!"
+          class="card"
+          draggable="true"
+        >
+          <h2>Rezervirati Hotel</h2>
+          <p>
+            Konferencija Academind održava se u prosincu; ne zaboravite
+            rezervirati hotel.
+          </p>
+          <button class="alt">Više...</button>
+          <button>Aktiviraj</button>
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <button id="stop-analytics-btn">Zaustavi Analitiku</button>
+    </footer>
+  </body>
+</html>
